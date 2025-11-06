@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link id='favicon' rel="icon" href="">
+  <style>
+    .suspended {
+      display: grid;
+      grid-template-rows: auto 1fr;
+      cursor: pointer;
+      height: 100vh;
+      margin: 0;
+    }
+    .suspended__title {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 10px;
+      margin: 20px auto;
+      font-weight: bold;
+      font-size: 1.5em;
+    }
+    .suspended__favicon {
+      width: 32px;
+      height: 32px;
+    }
+    .suspended__uri {
+      font-size: 20px;
+      margin: 60px auto auto auto;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      max-width: 80vw;
+    }
+  </style>
+</head>
+<body class="suspended">
+  <div class="suspended__title">
+    <img id="img" class="suspended__favicon" src="">
+    <div id="title"></div>
+  </div>
+  <div id="uri" class="suspended__uri"></div>
+  <script type="text/javascript" src="suspended.js"></script>
+</body>
+</html>

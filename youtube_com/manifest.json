@@ -1,0 +1,43 @@
+{
+    "name": "YouTube.com",
+    "version": "1.0",
+    "description": "YouTube.com modifications",
+    "permissions": [
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://www.youtube.com/*"
+    ],
+    "background": {
+        "scripts": ["service_worker.js"],
+        "service_worker": "service_worker.js"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "css": ["styles.css"]
+        }
+    ],
+    "commands": {
+        "toggle-comments": {
+            "suggested_key": {
+                "default": "Alt+Shift+1",
+                "mac": "Command+Shift+1"
+            },
+            "description": "Show/hide comments"
+        },
+        "toggle-secondary": {
+            "suggested_key": {
+                "default": "Alt+Shift+2",
+                "mac": "Command+Shift+2"
+            },
+            "description": "Show/hide playlist and chat column"
+        }
+    },
+    "manifest_version": 3,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "youtube_com@home.lan"
+        }
+    }
+}

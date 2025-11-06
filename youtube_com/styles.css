@@ -1,0 +1,41 @@
+/*
+ * Hide comments
+ */
+body:not(.yt-show-comments) #comments {
+    display: none!important;
+}
+
+/*
+ * Hide secondary column
+ */
+body:not(.yt-show-secondary) #secondary {
+    display: none!important;
+}
+
+/*
+ * Hide shelfs with shorts
+ */
+ytd-rich-section-renderer {
+    display: none!important;
+}
+
+/*
+ * Hide merch
+ */
+ytd-merch-shelf-renderer {
+    display: none!important;
+}
+
+/*
+ * Hide additional metadata
+ */
+ytd-metadata-row-container-renderer {
+    display: none!important;
+}
+
+/*
+ * Hide related suggestions
+ */
+#related {
+    display: none!important;
+}

@@ -1,0 +1,27 @@
+{
+    "name": "Suspend Tab",
+    "version": "1.0",
+    "description": "Suspend tabs",
+    "permissions": [
+        "tabs"
+    ],
+    "background": {
+        "scripts": ["service_worker.js"],
+        "service_worker": "service_worker.js"
+    },
+    "commands": {
+        "suspend-tab": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+F",
+                "mac": "Ctrl+Shift+F"
+            },
+            "description": "Suspend tab"
+        }
+    },
+    "manifest_version": 3,
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "suspend_tab@home.lan"
+        }
+    }
+}
